@@ -1,7 +1,7 @@
-FROM amd64/alpine:latest
+FROM arm32v7/alpine:latest
 
 ARG OVERLAY_VERSION="v1.22.1.0"
-ARG OVERLAY_ARCH="amd64"
+ARG OVERLAY_ARCH="armhf"
 
 ENV DEBUG="false" \
     GOPATH="/go" \
