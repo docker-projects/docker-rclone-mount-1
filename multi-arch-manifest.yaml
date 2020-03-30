@@ -14,3 +14,7 @@ manifests:
       architecture: arm
       os: linux
       variant: v7
+  - image: web2brain/rclone-mount:i386
+    platform:
+      architecture: 386
+      os: linux
