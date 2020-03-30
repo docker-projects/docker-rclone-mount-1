@@ -1,0 +1,16 @@
+image: web2brain/rclone-mount:latest
+manifests:
+  - image: web2brain/rclone-mount:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: web2brain/rclone-mount:arm64
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
+  - image: web2brain/rclone-mount:arm
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
