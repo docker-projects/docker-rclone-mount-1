@@ -4,16 +4,21 @@ manifests:
     platform:
       architecture: amd64
       os: linux
-  - image: web2brain/rclone-mount:arm64
+  - image: web2brain/rclone-mount:arm32v5
     platform:
-      architecture: arm64
+      architecture: arm
       os: linux
-      variant: v8
+      variant: v5
   - image: web2brain/rclone-mount:arm
     platform:
       architecture: arm
       os: linux
       variant: v7
+  - image: web2brain/rclone-mount:arm64
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
   - image: web2brain/rclone-mount:i386
     platform:
       architecture: 386
