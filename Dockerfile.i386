@@ -13,9 +13,9 @@ ENV DEBUG="false" \
     MountCommands="--allow-other --allow-non-empty" \
     UnmountCommands="-u -z"
 
-## Alpine with Go Git
+## Alpine with utilities
 RUN apk --no-cache upgrade \
-    && apk add --no-cache --update fuse gnupg unzip curl \
+    && apk add --no-cache --update fuse gnupg unzip curl ca-certificates \
     && echo "Installing S6 Overlay" \
     && curl -o /tmp/s6-overlay.tar.gz -L \
     "https://github.com/just-containers/s6-overlay/releases/download/${OVERLAY_VERSION}/s6-overlay-${OVERLAY_ARCH}.tar.gz" \
